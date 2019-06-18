@@ -8,15 +8,15 @@
 
   -- component TOP  
     -- port(  
-     -- CLK_IN        : IN  STD_LOGIC;  --输入时钟
-           -- RST_N     : IN  STD_LOGIC;      --输入复位信号，低电平有效
-           -- INSTRUCTION : IN STD_LOGIC_VECTOR(7 downto 0);  --输入8位指令
+     -- CLK_IN        : IN  STD_LOGIC;  
+           -- RST_N     : IN  STD_LOGIC;    
+           -- INSTRUCTION : IN STD_LOGIC_VECTOR(7 downto 0);  
            -- BUTTON : IN STD_LOGIC
       -- );  
   -- end component;  
   
-  -- signal rst_n  :std_logic:='0';  
-  -- signal clk   :std_logic:='0';  
+  -- signal rst_n  :std_logic:='1';  
+  -- signal clk   :std_logic:='1';  
   -- signal INSTRUCTION   :std_logic_vector(7 downto 0);  
   -- signal BUTTON : std_logic:='1';  
 
@@ -50,61 +50,61 @@
   -- begin  
      -- INSTRUCTION<="00000000";  
      -- wait for 1100ns;  
-     -- INSTRUCTION<="00000011";  -- 将立即数 0011 写入到 00寄存器
+     -- INSTRUCTION<="00000011";  
      -- wait for 200ns; 
      -- BUTTON <= '0';
      -- wait for 20000000ns; 
      -- BUTTON <= '1';
      -- wait for 20000000ns; 
-     -- INSTRUCTION<="00010011";  -- 将立即数 0011 写入到 01寄存器
+     -- INSTRUCTION<="00010011";  
      -- wait for 200ns; 
       -- BUTTON <= '0';
      -- wait for 20000000ns; 
        -- BUTTON <= '1';
      -- wait for 20000000ns; 
-     -- INSTRUCTION<="00101111";  -- 立即数 1111 写入到 10寄存器
+     -- INSTRUCTION<="00101111";  
      -- wait for 200ns; 
       -- BUTTON <= '0';
      -- wait for 20000000ns; 
        -- BUTTON <= '1';
      -- wait for 20000000ns; 
-     -- INSTRUCTION<="00110101";  -- 将立即数 0101 写入到 11寄存器
+     -- INSTRUCTION<="00110101"; 
      -- wait for 200ns; 
       -- BUTTON <= '0';
        -- wait for 20000000ns; 
        -- BUTTON <= '1';
        -- wait for 20000000ns;     
-      -- INSTRUCTION <= "01111110";--加操作， 将 10 寄存器值和 11寄存器值相加写入到11寄存器
+      -- INSTRUCTION <= "01111110";
       -- wait for 200ns; 
        -- BUTTON <= '0';
           -- wait for 20000000ns; 
           -- BUTTON <= '1';
           -- wait for 20000000ns; 
-      -- INSTRUCTION <= "10110011"; --减操作，将 00寄存器 减 11寄存器值后11寄存器
+      -- INSTRUCTION <= "10110011"; 
       -- wait for 200ns; 
        -- BUTTON <= '0';
           -- wait for 20000000ns; 
           -- BUTTON <= '1';
           -- wait for 20000000ns; 
-           -- INSTRUCTION <= "11100000"; --打印00寄存器的值
+           -- INSTRUCTION <= "11100000"; 
       -- wait for 200ns; 
        -- BUTTON <= '0';
           -- wait for 20000000ns; 
           -- BUTTON <= '1';
           -- wait for 20000000ns; 
-             -- INSTRUCTION <= "11101000"; --打印01寄存器的值
+             -- INSTRUCTION <= "11101000"; 
       -- wait for 200ns; 
        -- BUTTON <= '0';
           -- wait for 20000000ns; 
           -- BUTTON <= '1';
           -- wait for 20000000ns; 
-             -- INSTRUCTION <= "11110000"; --打印10寄存器的值
+             -- INSTRUCTION <= "11110000"; 
       -- wait for 200ns; 
        -- BUTTON <= '0';
           -- wait for 20000000ns; 
           -- BUTTON <= '1';
           -- wait for 20000000ns; 
-             -- INSTRUCTION <= "11111000"; --打印11寄存器的值
+             -- INSTRUCTION <= "11111000"; 
       -- wait for 200ns; 
        -- BUTTON <= '0';
           -- wait for 20000000ns; 
