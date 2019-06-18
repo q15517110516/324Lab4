@@ -89,24 +89,24 @@
 -- C<= result_add8;
 
   
--- -- PROCESS(ALUOP1)
--- -- BEGIN
--- --          IF(ALUOP1 = "01") THEN
--- --              C_REG <= A + B;
--- --          ELSIF (ALUOP1 = "10") THEN
--- --              C_REG <= A - B;
--- --          END IF;           
--- -- END PROCESS;
+-- PROCESS(ALUOP1)
+-- BEGIN
+--          IF(ALUOP1 = "01") THEN
+--              C_REG <= A + B;
+--          ELSIF (ALUOP1 = "10") THEN
+--              C_REG <= A - B;
+--          END IF;           
+-- END PROCESS;
 
 
--- -- PROCESS( C_REG)
--- -- BEGIN
--- --          IF(C_REG = "00000000" )THEN 
--- --             ZERO <= '1';
--- --          ELSE
--- --              ZERO <= '0';
--- --          END IF;           
--- -- END PROCESS;
+-- PROCESS( C_REG)
+-- BEGIN
+--          IF(C_REG = "00000000" )THEN 
+--             ZERO <= '1';
+--          ELSE
+--              ZERO <= '0';
+--          END IF;           
+-- END PROCESS;
 
 
 
