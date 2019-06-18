@@ -53,10 +53,10 @@
  -- PROCESS(CLK,RST_N)
  -- BEGIN
     -- IF( RST_N = '0' ) THEN   
-        -- REG(0) <= "00000000" ;
-        -- REG(1) <= "00000000";
-        -- REG(2) <= "00000000";
-        -- REG(3) <= "00000000";
+        -- REG(0) <= "00000001" ;
+        -- REG(1) <= "00000010";
+        -- REG(2) <= "00000100";
+        -- REG(3) <= "00001000";
     -- ELSIF(CLK'EVENT AND CLK='0')THEN 
           -- IF(RFWR='1')THEN
              -- IF(RD = "00") THEN  
@@ -84,13 +84,6 @@
               -- REG(1) when  RT = "01" else
               -- REG(2) when  RT = "10" else
               -- REG(3) ;
-              
-              
-
- -- DISP_OUT <= REG(0) when  DISP_RS = "00" else
-            -- REG(1) when  DISP_RS = "01" else
-            -- REG(2) when  DISP_RS = "10" else
-            -- REG(3) ;
 
 
  -- END ARCHITECTURE BEHAV;
